@@ -1,0 +1,96 @@
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom,#68EACC 0%,#497BEB 100%);
+}
+
+.wrapper{
+    margin:120px auto;
+    max-width: 400px;
+    width: 20%;
+    background: #fff;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.wrapper header{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.wrapper .todo-form{
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.todo-form input{
+    outline: none;
+    width: 85%;
+    height: 100%;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+
+.todo-form button{
+    width: 60px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: #8E49E8;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+.wrapper .todo-items{
+max-height: 250px;
+overflow-y: auto;
+}
+
+.checked{
+    text-decoration: line-through;
+}
+.todo-items li{
+    list-style-type: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: #f2f2f2;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+    cursor: default;
+    overflow: hidden;
+    padding: auto;
+    margin-left: -50px;
+}
+
+.todo-items li .delete-button{
+    position: absolute;
+    right: -45px;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    background: red;
+    cursor: pointer;
+    border-radius: 7px;
+    padding: 2px 5px;
+    margin-left: 10px;
+    font-size: 1.1rem;
+    font-weight: 550;
+    transition: all 0.5s ease;
+}
+
+.todo-items li:hover .delete-button{
+    right: 0px;
+}
+
+
